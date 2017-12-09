@@ -44,15 +44,7 @@ public class GesturesSettingPreferenceController extends AbstractPreferenceContr
 
     @Override
     public boolean isAvailable() {
-        if (mGestureControllers == null) {
-            mGestureControllers = GestureSettings.buildPreferenceControllers(mContext,
-                    null /* lifecycle */, new AmbientDisplayConfiguration(mContext));
-        }
-        boolean isAvailable = false;
-        for (AbstractPreferenceController controller : mGestureControllers) {
-            isAvailable = isAvailable || controller.isAvailable();
-        }
-        return isAvailable;
+        return false;
     }
 
     @Override

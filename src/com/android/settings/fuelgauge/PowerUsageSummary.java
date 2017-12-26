@@ -66,6 +66,7 @@ import com.android.settings.applications.ManageApplications;
 import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.display.AmbientDisplayPreferenceController;
+import com.android.settings.display.AmbientDisplayCustomPreferenceController;
 import com.android.settings.display.AutoBrightnessPreferenceController;
 import com.android.settings.display.BatteryPercentagePreferenceController;
 import com.android.settings.display.TimeoutPreferenceController;
@@ -348,6 +349,7 @@ public class PowerUsageSummary extends PowerUsageBase implements
                 context,
                 new AmbientDisplayConfiguration(context),
                 KEY_AMBIENT_DISPLAY));
+        controllers.add(new AmbientDisplayCustomPreferenceController(context));
         controllers.add(new BatteryLightPreferenceController(context, getLifecycle()));
         return controllers;
     }

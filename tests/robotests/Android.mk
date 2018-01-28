@@ -18,7 +18,7 @@ LOCAL_JAVA_LIBRARIES := \
     telephony-common
 
 LOCAL_INSTRUMENTATION_FOR := Settings
-LOCAL_MODULE := SettingsRoboTests
+LOCAL_MODULE := WatchSettingsRoboTests
 
 LOCAL_MODULE_TAGS := optional
 
@@ -29,7 +29,7 @@ include $(BUILD_STATIC_JAVA_LIBRARY)
 #############################################################
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := RunSettingsRoboTests
+LOCAL_MODULE := RunWatchSettingsRoboTests
 
 LOCAL_SDK_VERSION := current
 

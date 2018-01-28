@@ -19,7 +19,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 # Include all test java files.
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
-LOCAL_PACKAGE_NAME := SettingsUnitTests
+LOCAL_PACKAGE_NAME := WatchSettingsUnitTests
 LOCAL_COMPATIBILITY_SUITE := device-tests
 
 LOCAL_INSTRUMENTATION_FOR := Settings

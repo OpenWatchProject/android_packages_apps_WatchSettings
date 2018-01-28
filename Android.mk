@@ -4,14 +4,15 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := \
         $(call all-logtags-files-under, src)
 
-LOCAL_MODULE := settings-logtags
+LOCAL_MODULE := WatchSettingslogtags
 
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # Build the Settings APK
 include $(CLEAR_VARS)
 
-LOCAL_PACKAGE_NAME := Settings
+LOCAL_OVERRIDES_PACKAGES := Settings
+LOCAL_PACKAGE_NAME := WatchSettings
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_TAGS := optional
@@ -42,7 +43,7 @@ LOCAL_JAVA_LIBRARIES := \
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
     jsr305 \
-    settings-logtags
+    WatchSettingslogtags
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/preference/res \

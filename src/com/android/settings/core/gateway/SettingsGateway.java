@@ -134,6 +134,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import org.carbonrom.carbonfibers.CarbonFibers;
+import org.carbonrom.carbonfibers.fragments.system.System;
 
 public class SettingsGateway {
 
@@ -258,6 +259,7 @@ public class SettingsGateway {
             BluetoothDeviceDetailsFragment.class.getName(),
             DataUsageList.class.getName(),
             CarbonFibers.class.getName(),
+            System.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -297,5 +299,6 @@ public class SettingsGateway {
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.CarbonFibersActivity.class.getName(),
+            Settings.CarbonFibersSystemActivity.class.getName(),
     };
 }

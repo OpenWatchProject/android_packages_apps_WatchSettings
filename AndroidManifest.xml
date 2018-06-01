@@ -3345,6 +3345,9 @@
         <!-- Hide Apps from Recents (HAFR) -->
         <activity android:name="org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
 
+        <!-- Force Apps Aspect Ratio -->
+        <activity android:name="org.carbonrom.carbonfibers.fragments.system.ForceAspectRatioActivity" />
+
         <!-- Anonymous Statistics -->
         <receiver android:name="org.carbonrom.carbonfibers.crstats.ReportingServiceManager"
             android:enabled="true"

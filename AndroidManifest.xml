@@ -3343,10 +3343,12 @@
 
         <!-- So why not make it longer and add Carbon Features? -->
         <!-- Hide Apps from Recents (HAFR) -->
-        <activity android:name="org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
+        <activity android:name="org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppListActivity"
+                  android:label="@string/hide_apps_from_recents_title" />
 
         <!-- Force Apps Aspect Ratio -->
-        <activity android:name="org.carbonrom.carbonfibers.fragments.system.ForceAspectRatioActivity" />
+        <activity android:name="org.carbonrom.carbonfibers.fragments.system.ForceAspectRatioActivity"
+                  android:label="@string/force_aspect_ratio_apps_title" />
 
         <!-- Anonymous Statistics -->
         <receiver android:name="org.carbonrom.carbonfibers.crstats.ReportingServiceManager"

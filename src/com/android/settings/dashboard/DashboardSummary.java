@@ -205,7 +205,7 @@ public class DashboardSummary extends InstrumentedFragment
             mLayoutManager.scrollToPosition(scrollPosition);
         }
         mDashboard.setLayoutManager(mLayoutManager);
-        mDashboard.setHasFixedSize(true);
+        mDashboard.setHasFixedSize(getResources().getBoolean(R.bool.config_has_fixed_size));
         mDashboard.setListener(this);
         mDashboard.addItemDecoration(new DashboardDecorator(getContext()));
         mAdapter = new DashboardAdapter(getContext(), mSuggestionParser, bundle,

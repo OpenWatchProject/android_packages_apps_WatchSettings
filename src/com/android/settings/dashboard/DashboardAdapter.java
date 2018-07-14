@@ -26,11 +26,13 @@ import android.text.TextUtils;
 import android.util.ArrayMap;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.android.internal.logging.MetricsLogger;
@@ -219,6 +221,19 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
             case R.layout.dashboard_tile:
                 final Tile tile = (Tile) mItems.get(position);
                 onBindTile(holder, tile);
+
+                LinearLayout.LayoutParams itemParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                itemParams.height = 84;
+                holder.itemView.setLayoutParams(itemParams);
+
+                LinearLayout.LayoutParams titleParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                titleParams.gravity = Gravity.CENTER;
+                holder.title.setLayoutParams(titleParams);
+
+                LinearLayout.LayoutParams summaryParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                summaryParams.gravity = Gravity.CENTER;
+                holder.summary.setLayoutParams(summaryParams);
+
                 holder.itemView.setTag(tile);
                 holder.itemView.setOnClickListener(this);
                 break;

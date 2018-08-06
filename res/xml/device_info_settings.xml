@@ -17,10 +17,15 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform"
         xmlns:settings="http://schemas.android.com/apk/res-auto"
-        android:title="@string/about_settings">
+        android:title="@string/about_settings"
+        android:paddingStart="@dimen/dashboard_padding_start"
+        android:paddingEnd="@dimen/dashboard_padding_end"
+        android:paddingTop="@dimen/dashboard_padding_top"
+        android:paddingBottom="@dimen/dashboard_padding_bottom">
 
         <!-- System update settings - launches activity -->
         <PreferenceScreen android:key="system_update_settings"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/system_update_settings_list_item_title"
                 android:summary="@string/system_update_settings_list_item_summary">
             <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
@@ -28,6 +33,7 @@
 
 
         <PreferenceScreen android:key="additional_system_update_settings"
+                          android:layout="@layout/watch_settings_items"
                           android:title="@string/additional_system_update_settings_list_item_title">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="@string/additional_system_update"
@@ -36,6 +42,7 @@
 
         <!-- LineageOS Updates -->
         <cyanogenmod.preference.SelfRemovingPreference android:key="cm_updates"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/cmupdate_settings_title"
                 android:summary="@string/system_update_settings_list_item_summary"
                 cm:requiresOwner="true"
@@ -47,6 +54,7 @@
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/device_status"
                 android:summary="@string/device_status_summary"
                 android:fragment="com.android.settings.deviceinfo.Status">
@@ -55,6 +63,7 @@
         <!-- Manual -->
         <PreferenceScreen
                 android:key="manual"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/manual">
             <intent android:action="android.settings.SHOW_MANUAL" />
         </PreferenceScreen>
@@ -62,32 +71,38 @@
         <!-- Legal Information -->
         <PreferenceScreen
                 android:key="container"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/legal_information"
                 android:fragment="com.android.settings.LegalSettings" />
 
         <PreferenceScreen
                 android:key="regulatory_info"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/regulatory_labels">
             <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
         </PreferenceScreen>
 
         <PreferenceScreen
                 android:key="safety_info"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/safety_and_regulatory_info">
                 <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO" />
         </PreferenceScreen>
 
         <!-- Feedback on the device -->
         <PreferenceScreen android:key="device_feedback"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/device_feedback">
         </PreferenceScreen>
 
         <!-- Contributors cloud -->
         <org.cyanogenmod.internal.cmparts.CMPartsPreference
+                android:layout="@layout/watch_settings_items"
                 android:key="contributors" />
 
         <!-- Device name -->
         <Preference android:key="device_name"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/device_name"
@@ -96,6 +111,7 @@
         <!-- Device hardware model -->
         <com.android.settings.DividerPreference
                 android:key="device_model"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:selectable="false"
@@ -106,6 +122,7 @@
 
         <!-- Device firmware version -->
         <Preference android:key="firmware_version"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/firmware_version"
@@ -113,6 +130,7 @@
 
         <!-- Mod version -->
         <Preference android:key="mod_version"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/mod_version"
@@ -121,6 +139,7 @@
         <!-- CyanogenMod API Version -->
         <com.android.settings.DividerPreference
                 android:key="mod_api_level"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:selectable="false"
                 android:shouldDisableView="false"
@@ -131,6 +150,7 @@
 
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/security_patch"
                 android:summary="@string/device_info_default">
                 <intent android:action="android.intent.action.VIEW"
@@ -140,6 +160,7 @@
         <!-- Device FCC equipment id -->
         <com.android.settings.DividerPreference
                 android:key="fcc_equipment_id"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:selectable="false"
@@ -150,6 +171,7 @@
 
         <!-- Device MBN version -->
         <Preference android:key="mbn_version"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/mbn_version"
@@ -158,6 +180,7 @@
         <!-- Device Baseband version -->
         <com.android.settings.DividerPreference
                 android:key="baseband_version"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:selectable="false"
@@ -169,6 +192,7 @@
         <!-- Device Kernel version -->
         <com.android.settings.DividerPreference
                 android:key="kernel_version"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:selectable="false"
@@ -180,6 +204,7 @@
         <!-- Build date -->
         <com.android.settings.DividerPreference
                 android:key="build_date"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:selectable="false"
                 android:shouldDisableView="false"
@@ -190,6 +215,7 @@
 
         <!-- Detailed build version -->
         <Preference android:key="build_number"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/build_number"
@@ -197,6 +223,7 @@
 
         <!-- Device QGP version -->
         <Preference android:key="qgp_version"
+                android:layout="@layout/watch_settings_items"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/qgp_version"
 		android:summary="@string/device_info_default"/>
@@ -204,6 +231,7 @@
         <!-- SELinux status information -->
         <com.android.settings.DividerPreference
                 android:key="selinux_status"
+                android:layout="@layout/watch_settings_items"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:selectable="false"

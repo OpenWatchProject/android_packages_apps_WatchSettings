@@ -84,10 +84,10 @@
     <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
 
     <!-- Dashboard padding in its container -->
-    <dimen name="dashboard_padding_start">0dp</dimen>
-    <dimen name="dashboard_padding_end">0dp</dimen>
-    <dimen name="dashboard_padding_top">0dp</dimen>
-    <dimen name="dashboard_padding_bottom">0dp</dimen>
+    <dimen name="dashboard_padding_start">8dp</dimen>
+    <dimen name="dashboard_padding_end">8dp</dimen>
+    <dimen name="dashboard_padding_top">24dp</dimen>
+    <dimen name="dashboard_padding_bottom">32dp</dimen>
 
     <!-- Dashboard category padding start / end -->
     <dimen name="dashboard_category_padding_start">0dp</dimen>

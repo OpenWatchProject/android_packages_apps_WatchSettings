@@ -17,14 +17,19 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/network_dashboard_title">
+    android:title="@string/network_dashboard_title"
+    settings:keywords="@string/keywords_display"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <com.android.settings.widget.MasterSwitchPreference
         android:fragment="com.android.settings.wifi.WifiSettings"
         android:key="toggle_wifi"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/wifi_settings"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_settings_wireless"
         android:order="-30">
         <intent
             android:action="android.settings.WIFI_SETTINGS"
@@ -33,9 +38,9 @@
 
     <com.android.settingslib.RestrictedPreference
         android:key="mobile_network_settings"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/network_settings_title"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_network_cell"
         android:dependency="toggle_airplane"
         android:order="-15"
         settings:keywords="@string/keywords_more_mobile_networks"
@@ -50,8 +55,8 @@
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.TetherSettings"
         android:key="tether_settings"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/tether_settings_title_all"
-        android:icon="@drawable/ic_wifi_tethering"
         android:order="-5"
         android:summary="@string/summary_placeholder"
         settings:userRestriction="no_config_tethering"
@@ -60,8 +65,8 @@
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.vpn2.VpnSettings"
         android:key="vpn_settings"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/vpn_settings_title"
-        android:icon="@drawable/ic_vpn_key"
         android:order="0"
         android:summary="@string/summary_placeholder"
         settings:userRestriction="no_config_vpn"
@@ -69,6 +74,7 @@
 
     <com.android.settingslib.RestrictedPreference
         android:key="manage_mobile_plan"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/manage_mobile_plan_title"
         android:persistent="false"
         settings:userRestriction="no_config_mobile_networks"
@@ -76,14 +82,15 @@
 
     <SwitchPreference
         android:key="toggle_airplane"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/airplane_mode"
-        android:icon="@drawable/ic_airplanemode_active"
         android:disableDependentsState="true"
         android:order="5"/>
 
     <Preference
         android:fragment="com.android.settings.ProxySelector"
         android:key="proxy_settings"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/proxy_settings_title"/>
 
 </PreferenceScreen>

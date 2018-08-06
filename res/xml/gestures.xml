@@ -18,14 +18,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
-    android:title="@string/gesture_preference_title" >
+    android:title="@string/gesture_preference_title"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="touchscreen_gesture_settings"
+        android:layout="@layout/watch_settings_items"
         lineage:requiresFeature="lineagehardware:FEATURE_TOUCHSCREEN_GESTURES" />
 
     <lineageos.preference.RemotePreference
             android:key="device_touchscreen_gesture_settings"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/touchscreen_gesture_settings_title"
             android:summary="@string/touchscreen_gesture_settings_summary"
             lineage:replacesKey="touchscreen_gesture_settings"
@@ -35,31 +41,37 @@
 
     <Preference
         android:key="gesture_assist_input_summary"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/assist_gesture_title"
         android:fragment="com.android.settings.gestures.AssistGestureSettings" />
 
     <Preference
         android:key="gesture_swipe_down_fingerprint_input_summary"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/fingerprint_swipe_for_notifications_title"
         android:fragment="com.android.settings.gestures.SwipeToNotificationSettings" />
 
     <Preference
         android:key="gesture_double_tap_power_input_summary"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/double_tap_power_for_camera_title"
         android:fragment="com.android.settings.gestures.DoubleTapPowerSettings" />
 
     <Preference
         android:key="gesture_double_twist_input_summary"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/double_twist_for_camera_mode_title"
         android:fragment="com.android.settings.gestures.DoubleTwistGestureSettings" />
 
     <Preference
         android:key="gesture_double_tap_screen_input_summary"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/ambient_display_title"
         android:fragment="com.android.settings.gestures.DoubleTapScreenSettings" />
 
     <Preference
         android:key="gesture_pick_up_input_summary"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/ambient_display_pickup_title"
         android:fragment="com.android.settings.gestures.PickupGestureSettings" />
 

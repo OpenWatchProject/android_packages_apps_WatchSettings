@@ -16,21 +16,25 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/header_category_system">
+    android:title="@string/header_category_system"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <Preference
         android:key="gesture_settings"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/gesture_preference_title"
-        android:icon="@drawable/ic_settings_gestures"
         android:order="-250"
         android:fragment="com.android.settings.gestures.GestureSettings" />
 
     <!-- Backup -->
     <Preference
         android:key="backup_settings"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/privacy_settings_title"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_settings_backup"
         android:order="-60">
         <intent android:action="android.settings.BACKUP_AND_RESET_SETTINGS" />
     </Preference>
@@ -38,15 +42,16 @@
     <!-- System updates -->
     <Preference
         android:key="system_update_settings"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/system_update_settings_list_item_title"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_system_update"
         android:order="-30">
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
     </Preference>
 
     <Preference
         android:key="additional_system_update_settings"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/additional_system_update_settings_list_item_title"
         android:order="-31">
         <intent android:action="android.intent.action.MAIN"
@@ -56,9 +61,9 @@
 
     <Preference
         android:key="reset_dashboard"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/reset_dashboard_title"
         android:summary="@string/reset_dashboard_summary"
-        android:icon="@drawable/ic_restore"
         android:order="-20"
         android:fragment="com.android.settings.system.ResetDashboardFragment" />
 

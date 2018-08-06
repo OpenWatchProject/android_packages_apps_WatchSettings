@@ -16,10 +16,15 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/accessibility_settings"
-        android:persistent="true">
+        android:persistent="true"
+        android:paddingStart="@dimen/dashboard_padding_start"
+        android:paddingEnd="@dimen/dashboard_padding_end"
+        android:paddingTop="@dimen/dashboard_padding_top"
+        android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <Preference
             android:key="accessibility_shortcut_preference"
+            android:layout="@layout/watch_settings_items"
             android:fragment="com.android.settings.accessibility.AccessibilityShortcutPreferenceFragment"
             android:title="@string/accessibility_global_gesture_preference_title"/>
 
@@ -34,6 +39,7 @@
 
         <Preference
                 android:key="tts_settings_preference"
+                android:layout="@layout/watch_settings_items"
                 android:fragment="com.android.settings.tts.TextToSpeechSettings"
                 android:title="@string/tts_settings_title"/>
     </PreferenceCategory>
@@ -45,20 +51,24 @@
         <Preference
                 android:fragment="com.android.settings.accessibility.ToggleFontSizePreferenceFragment"
                 android:key="font_size_preference_screen"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/title_font_size"/>
 
         <com.android.settings.display.ScreenZoomPreference
                 android:key="screen_zoom"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/screen_zoom_title"/>
 
         <Preference
             android:fragment="com.android.settings.accessibility.MagnificationPreferenceFragment"
             android:key="magnification_preference_screen"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/accessibility_screen_magnification_title"
             android:icon="@mipmap/ic_accessibility_magnification" />
 
         <SwitchPreference
                 android:key="toggle_large_pointer_icon"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/accessibility_toggle_large_pointer_icon_title" />
     </PreferenceCategory>
 
@@ -69,20 +79,24 @@
         <Preference
                 android:fragment="com.android.settings.accessibility.ToggleAutoclickPreferenceFragment"
                 android:key="autoclick_preference_screen"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/accessibility_autoclick_preference_title"/>
 
         <SwitchPreference
                 android:key="toggle_power_button_ends_call_preference"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/accessibility_power_button_ends_call_prerefence_title"
                 android:persistent="false"/>
 
         <SwitchPreference
                 android:key="toggle_lock_screen_rotation_preference"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/accelerometer_title"
                 android:persistent="false"/>
 
         <ListPreference
                 android:key="select_long_press_timeout_preference"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/accessibility_long_press_timeout_preference_title"
                 android:entries="@array/long_press_timeout_selector_titles"
                 android:entryValues="@array/long_press_timeout_selector_values"
@@ -95,6 +109,7 @@
 
         <SwitchPreference
                 android:key="toggle_master_mono"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/accessibility_toggle_master_mono_title"
                 android:summary="@string/accessibility_toggle_master_mono_summary"
                 android:persistent="false"/>
@@ -102,6 +117,7 @@
         <Preference
                 android:fragment="com.android.settings.accessibility.CaptionPropertiesFragment"
                 android:key="captioning_preference_screen"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/accessibility_captioning_title" />
     </PreferenceCategory>
 
@@ -111,15 +127,18 @@
 
         <SwitchPreference
                 android:key="toggle_high_text_contrast_preference"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/accessibility_toggle_high_text_contrast_preference_title" />
 
         <Preference
                 android:fragment="com.android.settings.accessibility.ToggleDaltonizerPreferenceFragment"
                 android:key="daltonizer_preference_screen"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/accessibility_display_daltonizer_preference_title" />
 
         <SwitchPreference
                 android:key="toggle_inversion_preference"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/accessibility_display_inversion_preference_title"
                 android:summary="@string/accessibility_display_inversion_preference_subtitle"
                 android:persistent="false" />

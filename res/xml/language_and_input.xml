@@ -19,10 +19,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
-    android:title="@string/language_settings" >
+    android:title="@string/language_settings"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <Preference
         android:key="phone_language"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/phone_language"
         android:icon="@drawable/ic_translate_24dp"
         android:fragment="com.android.settings.localepicker.LocaleListEditor"/>
@@ -31,10 +36,12 @@
         android:title="@string/keyboard_and_input_methods_category">
         <Preference
             android:key="virtual_keyboard_pref"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/virtual_keyboard_category"
             android:fragment="com.android.settings.inputmethod.VirtualKeyboardFragment"/>
         <Preference
             android:key="physical_keyboard_pref"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/physical_keyboard_title"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.inputmethod.PhysicalKeyboardFragment"/>
@@ -47,12 +54,14 @@
              See: InputMethodAndSubtypeUtil.removeUnnecessaryNonPersistentPreference. -->
         <Preference
             android:key="spellcheckers_settings"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/spellcheckers_settings_title"
             android:persistent="false"
             android:fragment="com.android.settings.inputmethod.SpellCheckersSettings"/>
 
         <com.android.settings.widget.GearPreference
             android:key="default_autofill"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/autofill_app"
             android:fragment="com.android.settings.applications.defaultapps.DefaultAutofillPicker"
             settings:keywords="@string/autofill_keywords" />
@@ -60,6 +69,7 @@
         <!-- User dictionary preference title and fragment will be set programmatically. -->
         <Preference
             android:key="key_user_dictionary_settings"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/user_dict_settings_title"/>
     </PreferenceCategory>
 
@@ -67,16 +77,19 @@
 
         <com.android.settings.PointerSpeedPreference
             android:key="pointer_speed"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/pointer_speed"
             android:dialogTitle="@string/pointer_speed"/>
 
         <Preference
             android:key="tts_settings_summary"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/tts_settings_title"
             android:fragment="com.android.settings.tts.TextToSpeechSettings"/>
 
         <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="feature_touch_hovering"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/touchscreen_hovering_title"
             android:summary="@string/touchscreen_hovering_summary"
             android:defaultValue="false"
@@ -90,6 +103,7 @@
 
         <SwitchPreference
             android:key="vibrate_input_devices"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/vibrate_input_devices"
             android:summary="@string/vibrate_input_devices_summary" />
 

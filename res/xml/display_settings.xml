@@ -19,10 +19,15 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
     android:title="@string/display_settings"
-    settings:keywords="@string/keywords_display">
+    settings:keywords="@string/keywords_display"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <Preference
         android:key="brightness"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/brightness"
         settings:keywords="@string/keywords_display_brightness_level">
         <intent android:action="com.android.intent.action.SHOW_BRIGHTNESS_DIALOG" />
@@ -30,6 +35,7 @@
 
     <com.android.settings.display.NightDisplayPreference
         android:key="night_display"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/night_display_title"
         android:fragment="com.android.settings.display.NightDisplaySettings"
         android:widgetLayout="@null"
@@ -39,12 +45,14 @@
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <SwitchPreference
         android:key="auto_brightness"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/auto_brightness_title"
         settings:keywords="@string/keywords_display_auto_brightness"
         android:summary="@string/auto_brightness_summary" />
 
     <com.android.settingslib.RestrictedPreference
         android:key="wallpaper"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/wallpaper_settings_title"
         settings:keywords="@string/keywords_display_wallpaper"
         settings:useAdminDisabledSummary="true">
@@ -56,6 +64,7 @@
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <com.android.settings.TimeoutListPreference
         android:key="screen_timeout"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/screen_timeout"
         android:summary="@string/summary_placeholder"
         android:entries="@array/screen_timeout_entries"
@@ -69,42 +78,50 @@
     <!-- Rotation -->
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="rotation"
+        android:layout="@layout/watch_settings_items"
         lineage:requiresFeature="android.hardware.sensor.accelerometer" />
 
     <Preference
         android:key="color_mode"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/color_mode_title"
         android:fragment="com.android.settings.display.ColorModePreferenceFragment"
         settings:keywords="@string/keywords_color_mode" />
 
     <Preference
         android:key="font_size"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/title_font_size"
         android:fragment="com.android.settings.accessibility.ToggleFontSizePreferenceFragment"
         settings:keywords="@string/keywords_display_font_size" />
 
     <com.android.settings.display.ScreenZoomPreference
         android:key="screen_zoom"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/screen_zoom_title"
         settings:keywords="@string/screen_zoom_keywords" />
 
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="long_screen_settings"
+        android:layout="@layout/watch_settings_items"
         lineage:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" />
 
     <Preference
         android:key="screensaver"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/screensaver_settings_title"
         android:fragment="com.android.settings.dream.DreamSettings" />
 
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <Preference
         android:key="ambient_display"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/ambient_display_screen_title"
         android:fragment="com.android.settings.display.AmbientDisplaySettings" />
 
     <lineageos.preference.RemotePreference
         android:key="doze_device_settings"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/ambient_display_screen_title"
         lineage:replacesKey="ambient_display">
         <intent
@@ -122,27 +139,32 @@
 
     <SwitchPreference
         android:key="camera_gesture"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/camera_gesture_title"
         android:summary="@string/camera_gesture_desc" />
 
     <SwitchPreference
         android:key="lift_to_wake"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/lift_to_wake_title" />
 
     <SwitchPreference
         android:key="tap_to_wake"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" />
 
     <!-- Double tap to sleep -->
     <lineageos.preference.LineageSystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/status_bar_double_tap_to_sleep_title"
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
         android:defaultValue="true" />
 
     <lineageos.preference.LineageGlobalSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/wake_when_plugged_or_unplugged_title"
         android:summary="@string/wake_when_plugged_or_unplugged_summary"
         android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
@@ -150,12 +172,14 @@
     <!-- Prevent accidental wake-up -->
     <lineageos.preference.LineageSystemSettingSwitchPreference
         android:key="proximity_on_wake"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/proximity_wake_title"
         android:summary="@string/proximity_wake_summary"
         lineage:requiresConfig="@*lineageos.platform:bool/config_proximityCheckOnWake" />
 
     <lineageos.preference.LineageSystemSettingSwitchPreference
         android:key="high_touch_sensitivity_enable"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/high_touch_sensitivity_title"
         android:summary="@string/high_touch_sensitivity_summary"
         android:defaultValue="false"
@@ -170,6 +194,7 @@
 
     <Preference
         android:key="vr_display_pref"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
 

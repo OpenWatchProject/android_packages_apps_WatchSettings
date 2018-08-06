@@ -16,16 +16,22 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/connected_devices_dashboard_title">
+    android:title="@string/connected_devices_dashboard_title"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <com.android.settings.widget.MasterSwitchPreference
       android:key="toggle_bluetooth"
+      android:layout="@layout/watch_settings_items"
       android:title="@string/bluetooth_settings_title"
       android:icon="@drawable/ic_settings_bluetooth"
       android:order="-7"/>
 
     <SwitchPreference
         android:key="toggle_nfc"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/nfc_quick_toggle_title"
         android:icon="@drawable/ic_nfc"
         android:summary="@string/nfc_quick_toggle_summary"
@@ -34,12 +40,14 @@
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.nfc.AndroidBeam"
         android:key="android_beam_settings"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/android_beam_settings_title"
         android:icon="@drawable/ic_android"
         android:order="-4"/>
 
     <Preference
         android:key="sms_mirroring"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/sms_mirroring_pref"
         android:icon="@drawable/ic_sms_mirroring_24dp"
         android:summary="@string/summary_placeholder"
@@ -47,6 +55,7 @@
 
     <Preference
         android:key="usb_mode"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/usb_pref"
         android:icon="@drawable/ic_usb"
         android:order="-2">

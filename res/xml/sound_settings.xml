@@ -20,60 +20,73 @@
     xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
     android:title="@string/sound_settings"
     android:key="sound_settings"
-    settings:keywords="@string/keywords_sounds">
+    settings:keywords="@string/keywords_sounds"
+    android:paddingStart="@dimen/dashboard_padding_start"
+    android:paddingEnd="@dimen/dashboard_padding_end"
+    android:paddingTop="@dimen/dashboard_padding_top"
+    android:paddingBottom="@dimen/dashboard_padding_bottom">
 
     <PreferenceCategory
         android:order="-100">
         <!-- Media volume -->
         <com.android.settings.notification.VolumeSeekBarPreference
                 android:key="media_volume"
+                android:layout="@layout/watch_settings_items"
                 android:icon="@*android:drawable/ic_audio_media"
                 android:title="@string/media_volume_option_title" />
 
         <!-- Alarm volume -->
         <com.android.settings.notification.VolumeSeekBarPreference
                 android:key="alarm_volume"
+                android:layout="@layout/watch_settings_items"
                 android:icon="@*android:drawable/ic_audio_alarm"
                 android:title="@string/alarm_volume_option_title" />
 
         <!-- Ring volume -->
         <com.android.settings.notification.VolumeSeekBarPreference
                 android:key="ring_volume"
+                android:layout="@layout/watch_settings_items"
                 android:icon="@drawable/ic_audio_ring"
                 android:title="@string/ring_volume_option_title" />
 
         <!-- Notification volume -->
         <com.android.settings.notification.VolumeSeekBarPreference
                 android:key="notification_volume"
+                android:layout="@layout/watch_settings_items"
                 android:icon="@*android:drawable/ic_audio_ring_notif"
                 android:title="@string/notification_volume_option_title" />
 
         <!-- Link ringtone and notification volumes -->
         <lineageos.preference.SecureSettingSwitchPreference
                 android:key="volume_link_notification"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/volume_link_notification_title"
                 android:defaultValue="true" />
 
         <!-- Increasing ring -->
         <lineageos.preference.LineageSystemSettingSwitchPreference
                 android:key="increasing_ring"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/increasing_ring_volume_option_title" />
 
         <!-- Increasing ring volume -->
         <com.android.settings.notification.IncreasingRingVolumePreference
                 android:key="increasing_ring_volume"
+                android:layout="@layout/watch_settings_items"
                 android:icon="@drawable/ring_notif_increasing"
                 android:dependency="increasing_ring" />
 
         <!-- Also vibrate for calls -->
         <SwitchPreference
                 android:key="vibrate_when_ringing"
+                android:layout="@layout/watch_settings_items"
                 android:title="@string/vibrate_when_ringing_title" />
 
         <!-- Interruptions -->
         <com.android.settingslib.RestrictedPreference
                 android:key="zen_mode"
                 android:title="@string/zen_mode_settings_title"
+                android:layout="@layout/watch_settings_items"
                 settings:useAdminDisabledSummary="true"
                 settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
                 android:fragment="com.android.settings.notification.ZenModeSettings"
@@ -82,6 +95,7 @@
         <!-- Phone ringtone -->
         <com.android.settings.DefaultRingtonePreference
             android:key="ringtone"
+            android:layout="@layout/watch_settings_items"
             android:title="@string/ringtone_title"
             android:dialogTitle="@string/ringtone_title"
             android:summary="@string/summary_placeholder"
@@ -93,6 +107,7 @@
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="notification_ringtone"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/notification_ringtone_title"
         android:dialogTitle="@string/notification_ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -102,6 +117,7 @@
     <!-- Default alarm ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="alarm_ringtone"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/alarm_ringtone_title"
         android:dialogTitle="@string/alarm_ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -117,63 +133,75 @@
         <!-- Dial pad tones -->
         <SwitchPreference
           android:key="dial_pad_tones"
+          android:layout="@layout/watch_settings_items"
           android:title="@string/dial_pad_tones_title" />
 
         <!-- Screen locking sounds -->
         <SwitchPreference
           android:key="screen_locking_sounds"
+          android:layout="@layout/watch_settings_items"
           android:title="@string/screen_locking_sounds_title" />
 
         <!-- Charging sounds -->
         <SwitchPreference
           android:key="charging_sounds"
+          android:layout="@layout/watch_settings_items"
           android:title="@string/charging_sounds_title" />
 
         <!-- Custom charging sounds -->
         <org.lineageos.internal.lineageparts.LineagePartsPreference
           android:key="charging_sounds_settings"
+          android:layout="@layout/watch_settings_items"
           lineage:replacesKey="charging_sounds" />
 
         <!-- Docking sounds -->
         <SwitchPreference
           android:key="docking_sounds"
+          android:layout="@layout/watch_settings_items"
           android:title="@string/docking_sounds_title" />
 
         <!-- Touch sounds -->
         <SwitchPreference
           android:key="touch_sounds"
+          android:layout="@layout/watch_settings_items"
           android:title="@string/touch_sounds_title" />
 
         <!-- Vibrate on touch -->
         <SwitchPreference
           android:key="vibrate_on_touch"
+          android:layout="@layout/watch_settings_items"
           android:title="@string/vibrate_on_touch_title" />
 
         <!-- Volume adjust sound -->
         <lineageos.preference.LineageSystemSettingSwitchPreference
           android:key="volume_adjust_sounds_enabled"
+          android:layout="@layout/watch_settings_items"
           android:title="@string/volume_adjust_sounds_title" />
 
         <!-- Dock speaker plays -->
         <DropDownPreference
           android:key="dock_audio_media"
+          android:layout="@layout/watch_settings_items"
           android:title="@string/dock_audio_media_title"
           android:summary="%s" />
 
         <!-- Boot sounds -->
         <SwitchPreference
           android:key="boot_sounds"
+          android:layout="@layout/watch_settings_items"
           android:title="@string/boot_sounds_title" />
 
         <!-- Emergency tone -->
         <DropDownPreference
           android:key="emergency_tone"
+          android:layout="@layout/watch_settings_items"
           android:title="@string/emergency_tone_title"
           android:summary="%s" />
     </PreferenceCategory>
 
     <com.android.settingslib.RestrictedPreference
       android:key="cell_broadcast_settings"
+      android:layout="@layout/watch_settings_items"
       android:title="@string/cell_broadcast_settings"
       settings:useAdminDisabledSummary="true"
       settings:allowDividerAbove="true"
@@ -186,12 +214,14 @@
 
     <com.android.settings.WorkOnlyCategory
         android:key="sound_work_settings_section"
+        android:layout="@layout/watch_settings_items"
         android:title="@string/sound_work_settings"
         android:order="100">
 
                 <!-- Use the same sounds of the work profile -->
                 <SwitchPreference
                     android:key="work_use_personal_sounds"
+                    android:layout="@layout/watch_settings_items"
                     android:title="@string/work_use_personal_sounds_title"
                     android:summary="@string/work_use_personal_sounds_summary"
                     android:disableDependentsState="true" />
@@ -199,6 +229,7 @@
                 <!-- Work phone ringtone -->
                 <com.android.settings.DefaultRingtonePreference
                     android:key="work_ringtone"
+                    android:layout="@layout/watch_settings_items"
                     android:title="@string/work_ringtone_title"
                     android:dialogTitle="@string/work_alarm_ringtone_title"
                     android:ringtoneType="ringtone"
@@ -207,6 +238,7 @@
                 <!-- Default work notification ringtone -->
                 <com.android.settings.DefaultRingtonePreference
                     android:key="work_notification_ringtone"
+                    android:layout="@layout/watch_settings_items"
                     android:title="@string/work_notification_ringtone_title"
                     android:dialogTitle="@string/work_alarm_ringtone_title"
                     android:ringtoneType="notification"
@@ -215,6 +247,7 @@
                 <!-- Default work alarm ringtone -->
                 <com.android.settings.DefaultRingtonePreference
                     android:key="work_alarm_ringtone"
+                    android:layout="@layout/watch_settings_items"
                     android:title="@string/work_alarm_ringtone_title"
                     android:dialogTitle="@string/work_alarm_ringtone_title"
                     android:persistent="false"

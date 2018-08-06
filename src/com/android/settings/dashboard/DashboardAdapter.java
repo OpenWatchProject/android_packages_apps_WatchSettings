@@ -68,7 +68,6 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     private final List<Object> mItems = new ArrayList<>();
     private final List<Integer> mTypes = new ArrayList<>();
     private final List<Integer> mIds = new ArrayList<>();
-    private final IconCache mCache;
 
     private final Context mContext;
 
@@ -88,7 +87,6 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     public DashboardAdapter(Context context, SuggestionParser parser, Bundle savedInstanceState,
                 List<Condition> conditions) {
         mContext = context;
-        mCache = new IconCache(context);
         mSuggestionParser = parser;
         mConditions = conditions;
 
@@ -121,13 +119,6 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         for (int i = 0; i < categories.size(); i++) {
             for (int j = 0; j < categories.get(i).tiles.size(); j++) {
                 Tile tile = categories.get(i).tiles.get(j);
-
-                if (!mContext.getPackageName().equals(
-                        tile.intent.getComponent().getPackageName())) {
-                    // If this drawable is coming from outside Settings, tint it to match the
-                    // color.
-                    tile.icon.setTint(tintColor.data);
-                }
             }
         }
         recountItems();
@@ -343,7 +334,6 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     }
 
     private void onBindTile(DashboardItemHolder holder, Tile tile) {
-        holder.icon.setImageDrawable(mCache.getIcon(tile.icon));
         holder.title.setText(tile.title);
         if (!TextUtils.isEmpty(tile.summary)) {
             holder.summary.setText(tile.summary);
@@ -475,6 +465,8 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
             icon = (ImageView) itemView.findViewById(android.R.id.icon);
             title = (TextView) itemView.findViewById(android.R.id.title);
             summary = (TextView) itemView.findViewById(android.R.id.summary);
+            icon.setVisibility(View.GONE);
+
         }
     }
 }

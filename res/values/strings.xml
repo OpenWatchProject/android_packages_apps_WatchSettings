@@ -248,6 +248,8 @@
     <string name="bluetooth_disconnect_all_profiles" product="tablet">Your tablet will disconnect from "<xliff:g id="device_name">%1$s</xliff:g>."</string>
     <!-- Bluetooth settings.  Message for disconnecting from all profiles of a bluetooth device. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_disconnect_all_profiles" product="device">Your device will disconnect from "<xliff:g id="device_name">%1$s</xliff:g>."</string>
+    <!-- Bluetooth settings.  Message for disconnecting from all profiles of a bluetooth device. [CHAR LIMIT=NONE] -->
+    <string name="bluetooth_disconnect_all_profiles" product="watch">Your watch will disconnect from "<xliff:g id="device_name">%1$s</xliff:g>."</string>
     <!-- dialog ok button for disconnect dialog [CHAR LIMIT=20] -->
     <string name="bluetooth_disconnect_dialog_ok">Disconnect</string>
     <!-- Bluetooth Settings. text displayed when user has restriction DISALLOW_CONFIG_BLUETOOTH [CHAR LIMIT=NONE]-->
@@ -263,6 +265,8 @@
     <string name="bluetooth_footer_mac_message" product="tablet">Tablet\'s Bluetooth address: <xliff:g id="bluetooth_mac_address">%1$s</xliff:g></string>
     <!-- Bluetooth mac address message.  This message shows the bluetooth mac address for this device.  [CHAR LIMIT=120] -->
     <string name="bluetooth_footer_mac_message" product="device">Device\'s Bluetooth address: <xliff:g id="bluetooth_mac_address">%1$s</xliff:g></string>
+    <!-- Bluetooth mac address message.  This message shows the bluetooth mac address for this device.  [CHAR LIMIT=120] -->
+    <string name="bluetooth_footer_mac_message" product="watch">Watch\'s Bluetooth address: <xliff:g id="bluetooth_mac_address">%1$s</xliff:g></string>
 
     <!-- Bluetooth Visibility disconnect question.  Asks the user if they wish to disconnect a paired bluetooth device.  [CHAR LIMIT=50] -->
     <string name="bluetooth_is_disconnect_question">Disconnect <xliff:g id="device_name">%1$s</xliff:g>?</string>
@@ -307,41 +311,57 @@
     <string name="bluetooth_ask_discovery" product="tablet"><xliff:g id="app_name">%1$s</xliff:g> wants to make your tablet visible to other Bluetooth devices for <xliff:g id="timeout">%2$d</xliff:g> seconds.</string>
     <!-- Strings for asking to the user whether to allow an app to enable discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_discovery" product="default"><xliff:g id="app_name">%1$s</xliff:g> wants to make your phone visible to other Bluetooth devices for <xliff:g id="timeout">%2$d</xliff:g> seconds.</string>
+    <!-- Strings for asking to the user whether to allow an app to enable discovery mode. [CHAR LIMIT=NONE] -->
+    <string name="bluetooth_ask_discovery" product="watch"><xliff:g id="app_name">%1$s</xliff:g> wants to make your watch visible to other Bluetooth devices for <xliff:g id="timeout">%2$d</xliff:g> seconds.</string>
 
     <!-- Strings for asking to the user whether to allow an app to enable discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_discovery_no_name" product="tablet">An app wants to make your tablet visible to other Bluetooth devices for <xliff:g id="timeout">%1$d</xliff:g> seconds.</string>
     <!-- Strings for asking to the user whether to allow an app to enable discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_discovery_no_name" product="default">An app wants to make your phone visible to other Bluetooth devices for <xliff:g id="timeout">%1$d</xliff:g> seconds.</string>
+    <!-- Strings for asking to the user whether to allow an app to enable discovery mode. [CHAR LIMIT=NONE] -->
+    <string name="bluetooth_ask_discovery_no_name" product="watch">An app wants to make your watch visible to other Bluetooth devices for <xliff:g id="timeout">%1$d</xliff:g> seconds.</string>
 
     <!-- Strings for asking to the user whether to allow an app to enable lasting discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_lasting_discovery" product="tablet"><xliff:g id="app_name">%1$s</xliff:g> wants to make your tablet visible to other Bluetooth devices. You can change this later in Bluetooth settings.</string>
     <!-- Strings for asking to the user whether to allow an app to enable lasting discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_lasting_discovery" product="default"><xliff:g id="app_name">%1$s</xliff:g> wants to make your phone visible to other Bluetooth devices. You can change this later in Bluetooth settings.</string>
+    <!-- Strings for asking to the user whether to allow an app to enable lasting discovery mode. [CHAR LIMIT=NONE] -->
+    <string name="bluetooth_ask_lasting_discovery" product="watch"><xliff:g id="app_name">%1$s</xliff:g> wants to make your watch visible to other Bluetooth devices. You can change this later in Bluetooth settings.</string>
 
     <!-- Strings for asking to the user whether to allow an app to enable lasting discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_lasting_discovery_no_name" product="tablet">An app wants to make your tablet visible to other Bluetooth devices. You can change this later in Bluetooth settings.</string>
     <!-- Strings for asking to the user whether to allow an app to enable lasting discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_lasting_discovery_no_name" product="default">An app wants to make your phone visible to other Bluetooth devices. You can change this later in Bluetooth settings.</string>
+    <!-- Strings for asking to the user whether to allow an app to enable lasting discovery mode. [CHAR LIMIT=NONE] -->
+    <string name="bluetooth_ask_lasting_discovery_no_name" product="watch">An app wants to make your phone visible to other Bluetooth devices. You can change this later in Bluetooth settings.</string>
 
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet"><xliff:g id="app_name">%1$s</xliff:g> wants to turn on Bluetooth and make your tablet visible to other devices for <xliff:g id="timeout">%2$d</xliff:g> seconds.</string>
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_enablement_and_discovery" product="default"><xliff:g id="app_name">%1$s</xliff:g> wants to turn on Bluetooth and make your phone visible to other devices for <xliff:g id="timeout">%2$d</xliff:g> seconds.</string>
+    <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
+    <string name="bluetooth_ask_enablement_and_discovery" product="watch"><xliff:g id="app_name">%1$s</xliff:g> wants to turn on Bluetooth and make your watch visible to other devices for <xliff:g id="timeout">%2$d</xliff:g> seconds.</string>
 
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet">An app wants to turn on Bluetooth and make your tablet visible to other devices for <xliff:g id="timeout">%1$d</xliff:g> seconds.</string>
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default">An app wants to turn on Bluetooth and make your phone visible to other devices for <xliff:g id="timeout">%1$d</xliff:g> seconds.</string>
+    <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="watch">An app wants to turn on Bluetooth and make your watch visible to other devices for <xliff:g id="timeout">%1$d</xliff:g> seconds.</string>
 
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet"><xliff:g id="app_name">%1$s</xliff:g> wants to turn on Bluetooth and make your tablet visible to other devices. You can change this later in Bluetooth settings.</string>
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default"><xliff:g id="app_name">%1$s</xliff:g> wants to turn on Bluetooth and make your phone visible to other devices. You can change this later in Bluetooth settings.</string>
+    <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
+    <string name="bluetooth_ask_enablement_and_lasting_discovery" product="watch"><xliff:g id="app_name">%1$s</xliff:g> wants to turn on Bluetooth and make your watch visible to other devices. You can change this later in Bluetooth settings.</string>
 
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_enablement_and_lasting_discovery_no_name" product="tablet">An app wants to turn on Bluetooth and make your tablet visible to other devices. You can change this later in Bluetooth settings.</string>
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_enablement_and_lasting_discovery_no_name" product="default">An app wants to turn on Bluetooth and make your phone visible to other devices. You can change this later in Bluetooth settings.</string>
+    <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
+    <string name="bluetooth_ask_enablement_and_lasting_discovery_no_name" product="watch">An app wants to turn on Bluetooth and make your watch visible to other devices. You can change this later in Bluetooth settings.</string>
 
     <!-- Strings for msg to display to user while bluetooth is turning on [CHAR LIMIT=60] -->
     <string name="bluetooth_turning_on">"Turning Bluetooth on\u2026"</string>
@@ -615,6 +635,8 @@
     <string name="phone_info_label" product="tablet">Tablet info</string>
     <!-- The title of the activity to see phone info -->
     <string name="phone_info_label" product="default">Phone info</string>
+    <!-- The title of the activity to see phone info -->
+    <string name="phone_info_label" product="watch">Watch info</string>
     <!-- The title of the activity to adjust SD card settings [CHAR LIMIT=25] -->
     <string name="sd_card_settings_label" product="nosdcard">USB storage</string>
     <!-- The title of the activity to adjust SD card settings-->
@@ -680,6 +702,8 @@
     <string name="roaming_warning_multiuser" product="tablet">When you allow data roaming, you may incur significant roaming charges!\n\nThis setting affects all users on this tablet.</string>
     <!-- mobile network settings screen, message in dialog box that appears when you select the "Data roaming" check box. This is for multiuser phones [CHAR LIMIT=none] -->
     <string name="roaming_warning_multiuser" product="default">When you allow data roaming, you may incur significant roaming charges!\n\nThis setting affects all users on this phone.</string>
+    <!-- mobile network settings screen, message in dialog box that appears when you select the "Data roaming" check box. This is for multiuser phones [CHAR LIMIT=none] -->
+    <string name="roaming_warning_multiuser" product="watch">When you allow data roaming, you may incur significant roaming charges!\n\nThis setting affects all users on this watch.</string>
     <!-- mobile network settings screen, title of dialog box that appears when you select the "Data roaming" check box -->
     <string name="roaming_reenable_title">Allow data roaming?</string>
     <!-- mobile network settings screen, setting option name -->
@@ -781,6 +805,8 @@
     <string name="encryption_and_credential_settings_summary" product="default">Phone encrypted</string>
     <!-- Security Settings screen Encryption and crendential summary -->
     <string name="encryption_and_credential_settings_summary" product="tablet">Device encrypted</string>
+    <!-- Security Settings screen Encryption and crendential summary -->
+    <string name="encryption_and_credential_settings_summary" product="watch">Watch encrypted</string>
     <!-- Security Settings screen setting option title for the item to take you to the lock screen preference screen [CHAR LIMIT=60] -->
     <string name="lockscreen_settings_title">Lock screen preferences</string>
 
@@ -846,12 +872,16 @@
     <string name="lock_screen_intro_skip_dialog_text_frp" product="device">Device protection features won\u2019t be turned on. You won\u2019t be able to prevent others from using this device if it\u2019s lost, stolen or reset.</string>
     <!-- Dialog text shown when the user tries to skip setting up a screen lock, warning them of potential consequences of not doing so, including loss of factory reset protection. (phone) [CHAR LIMIT=NONE] -->
     <string name="lock_screen_intro_skip_dialog_text_frp" product="default">Device protection features won\u2019t be turned on. You won\u2019t be able to prevent others from using this phone if it\u2019s lost, stolen or reset.</string>
+    <!-- Dialog text shown when the user tries to skip setting up a screen lock, warning them of potential consequences of not doing so, including loss of factory reset protection. (phone) [CHAR LIMIT=NONE] -->
+    <string name="lock_screen_intro_skip_dialog_text_frp" product="watch">Device protection features won\u2019t be turned on. You won\u2019t be able to prevent others from using this watch if it\u2019s lost, stolen or reset.</string>
     <!-- Dialog text shown when the user tries to skip setting up a screen lock, warning them of potential consequences of not doing so. (tablet) [CHAR LIMIT=NONE] -->
     <string name="lock_screen_intro_skip_dialog_text" product="tablet">Device protection features won\u2019t be turned on. You won\u2019t be able to prevent others from using this tablet if it\u2019s lost or stolen.</string>
     <!-- Dialog text shown when the user tries to skip setting up a screen lock, warning them of potential consequences of not doing so. (device) [CHAR LIMIT=NONE] -->
     <string name="lock_screen_intro_skip_dialog_text" product="device">Device protection features won\u2019t be turned on. You won\u2019t be able to prevent others from using this device if it\u2019s lost or stolen.</string>
     <!-- Dialog text shown when the user tries to skip setting up a screen lock, warning them of potential consequences of not doing so. (phone) [CHAR LIMIT=NONE] -->
     <string name="lock_screen_intro_skip_dialog_text" product="default">Device protection features won\u2019t be turned on. You won\u2019t be able to prevent others from using this phone if it\u2019s lost or stolen.</string>
+    <!-- Dialog text shown when the user tries to skip setting up a screen lock, warning them of potential consequences of not doing so. (phone) [CHAR LIMIT=NONE] -->
+    <string name="lock_screen_intro_skip_dialog_text" product="watch">Device protection features won\u2019t be turned on. You won\u2019t be able to prevent others from using this watch if it\u2019s lost or stolen.</string>
     <!-- Button for skipping a step after having been warned of a potential concern [CHAR LIMIT=30] -->
     <string name="skip_anyway_button_label">Skip anyway</string>
     <!-- Button for going to the previous screen or step [CHAR LIMIT=20] -->
@@ -952,6 +982,8 @@
     <string name="crypt_keeper_encrypt_title" product="tablet">Encrypt tablet</string>
     <!-- Title of the preferences item to control encryption -->
     <string name="crypt_keeper_encrypt_title" product="default">Encrypt phone</string>
+    <!-- Title of the preferences item to control encryption -->
+    <string name="crypt_keeper_encrypt_title" product="watch">Encrypt watch</string>
 
     <!-- Summary of the preferences item to control encryption, when encryption is active -->
     <string name="crypt_keeper_encrypted_summary">Encrypted</string>
@@ -974,11 +1006,21 @@
     data reset, erasing all your data.\n\nEncryption takes an hour or more. You must start with
     a charged battery and keep your phone plugged in throughout the process. If you interrupt it,
     you\u2019ll lose some or all of your data.</string>
+    <string name="crypt_keeper_desc" product="watch">
+    You can encrypt your accounts, settings, downloaded apps and their data,
+    media, and other files. After you encrypt your watch, assuming you\u2019ve set up a screen lock
+    (that is, a pattern or numeric PIN or password), you\u2019ll need to unlock the screen to decrypt
+    the watch every time you power it on. The only other way to decrypt is to perform a factory
+    data reset, erasing all your data.\n\nEncryption takes an hour or more. You must start with
+    a charged battery and keep your watch plugged in throughout the process. If you interrupt it,
+    you\u2019ll lose some or all of your data.</string>
 
     <!-- Button text to start encryption process -->
     <string name="crypt_keeper_button_text" product="tablet">Encrypt tablet</string>
     <!-- Button text to start encryption process -->
     <string name="crypt_keeper_button_text" product="default">Encrypt phone</string>
+    <!-- Button text to start encryption process -->
+    <string name="crypt_keeper_button_text" product="watch">Encrypt watch</string>
 
     <!-- Warning string that will be displayed when encryption cannot be started -->
     <string name="crypt_keeper_low_charge_text">Charge your battery and try again.</string>
@@ -1003,6 +1045,11 @@
     The encryption operation is irreversible and if you interrupt it, you\u2019ll lose data.
     Encryption takes an hour or more, during which the phone will restart several times.
     </string>
+    <!-- Warning text in the final confirmation screen before starting device encryption -->
+    <string name="crypt_keeper_final_desc" product="watch">
+    The encryption operation is irreversible and if you interrupt it, you\u2019ll lose data.
+    Encryption takes an hour or more, during which the watch will restart several times.
+    </string>
 
     <!-- Title of the progress screen while encrypting the device -->
     <string name="crypt_keeper_setup_title">Encrypting</string>
@@ -1013,14 +1060,19 @@
     <!-- Informational text on the progress screen while encrypting the device -->
     <string name="crypt_keeper_setup_description" product="default">Wait while your phone
     is being encrypted. <xliff:g id="percent" example="50">^1</xliff:g>% complete.</string>
+    <!-- Informational text on the progress screen while encrypting the device -->
+    <string name="crypt_keeper_setup_description" product="watch">Wait while your watch
+    is being encrypted. <xliff:g id="percent" example="50">^1</xliff:g>% complete.</string>
     <string name="crypt_keeper_setup_time_remaining" product="tablet">Wait while your tablet
     is being encrypted. Time remaining: <xliff:g id="duration" example="1:23">^1</xliff:g></string>
     <string name="crypt_keeper_setup_time_remaining" product="default">Wait while your phone
     is being encrypted. Time remaining: <xliff:g id="duration" example="1:23">^1</xliff:g></string>
+    <string name="crypt_keeper_setup_time_remaining" product="watch">Wait while your watch
+    is being encrypted. Time remaining: <xliff:g id="duration" example="1:23">^1</xliff:g></string>
 
     <string name="crypt_keeper_force_power_cycle" product="tablet">To unlock your tablet, turn it off and then on.</string>
     <string name="crypt_keeper_force_power_cycle" product="default">To unlock your phone, turn it off and then on.</string>
-
+    <string name="crypt_keeper_force_power_cycle" product="watch">To unlock your watch, turn it off and then on.</string>
 
     <!-- Warn user their device will be wiped if they make x more failed attempts -->
     <string name="crypt_keeper_warn_wipe">Warning: Your device will be wiped after
@@ -1052,6 +1104,15 @@
       to restore any data that was backed up to your Google Account.
     </string>
 
+    <!-- Informational text when encryption fails -->
+    <string name="crypt_keeper_failed_summary" product="watch">
+      Encryption was interrupted and can\u2019t complete. As a result, the data on
+      your watch is no longer accessible.
+      \n\nTo resume using your watch, you need to perform a factory reset.
+      When you set up your watch after the reset, you\u2019ll have an opportunity
+      to restore any data that was backed up to your Google Account.
+    </string>
+
     <!-- Title of the encryption screen when decrypting the device failed -->
     <string name="crypt_keeper_data_corrupt_title">Decryption unsuccessful</string>
 
@@ -1070,6 +1131,15 @@
       corrupt.
       \n\nTo resume using your phone, you need to perform a factory reset.
       When you set up your phone after the reset, you\u2019ll have an opportunity
+      to restore any data that was backed up to your Google Account.
+    </string>
+
+    <!-- Informational text when encryption fails -->
+    <string name="crypt_keeper_data_corrupt_summary" product="watch">
+      The password you entered is correct, but unfortunately your data is
+      corrupt.
+      \n\nTo resume using your watch, you need to perform a factory reset.
+      When you set up your watch after the reset, you\u2019ll have an opportunity
       to restore any data that was backed up to your Google Account.
     </string>
 
@@ -1104,6 +1174,8 @@
     <string name="setup_lock_settings_picker_title" product="device">Protect your device</string>
     <!--  Title for security picker in setup wizard to choose the unlock method: None/Pattern/PIN/Password (phone) [CHAR LIMIT=22] -->
     <string name="setup_lock_settings_picker_title" product="default">Protect your phone</string>
+    <!--  Title for security picker in setup wizard to choose the unlock method: None/Pattern/PIN/Password (phone) [CHAR LIMIT=22] -->
+    <string name="setup_lock_settings_picker_title" product="watch">Protect your watch</string>
 
     <!-- Message shown when setting up screen lock, prompting user to choose the their backup screen lock method [CHAR LIMIT=NONE] -->
     <string name="lock_settings_picker_fingerprint_added_security_message">For added security, set up a backup screen lock.</string>
@@ -1114,6 +1186,8 @@
     <string name="setup_lock_settings_picker_message" product="device">Prevent others from using this device without your permission by activating device protection features. Choose the screen lock you want to use.</string>
     <!-- Description text for screen in setup wizard asking user to set up screen lock, explaining to the user how setting up a screen lock protect them from losing data. (phone) [CHAR LIMIT=NONE] -->
     <string name="setup_lock_settings_picker_message" product="default">Prevent others from using this phone without your permission by activating device protection features. Choose the screen lock you want to use.</string>
+    <!-- Description text for screen in setup wizard asking user to set up screen lock, explaining to the user how setting up a screen lock protect them from losing data. (phone) [CHAR LIMIT=NONE] -->
+    <string name="setup_lock_settings_picker_message" product="watch">Prevent others from using this watch without your permission by activating device protection features. Choose the screen lock you want to use.</string>
 
     <!-- Message shown in screen lock picker while setting up the backup/fallback screen lock method for fingerprint. Users can choose to use this method to unlock the screen instead of fingerprint, or when fingerprint is not accepted. [CHAR LIMIT=80] [BACKUP_MESSAGE_ID=2799884038398627882] -->
     <string name="lock_settings_picker_fingerprint_message">Choose your backup screen lock method</string>
@@ -1552,6 +1626,8 @@
     <string name="bluetooth_unpair_dialog_body" product="tablet">Your tablet will no longer be paired with <xliff:g id="device_name">%1$s</xliff:g></string>
     <!--  Bluetooth device details. The body of a confirmation dialog for unpairing a paired device. -->
     <string name="bluetooth_unpair_dialog_body" product="device">Your device will no longer be paired with <xliff:g id="device_name">%1$s</xliff:g></string>
+    <!--  Bluetooth device details. The body of a confirmation dialog for unpairing a paired device. -->
+    <string name="bluetooth_unpair_dialog_body" product="watch">Your watch will no longer be paired with <xliff:g id="device_name">%1$s</xliff:g></string>
 
     <!--  Bluetooth device details. In the confirmation dialog for unpairing a paired device, this is the label on the button that will complete the unpairing action. -->
     <string name="bluetooth_unpair_dialog_forget_confirm_button">Forget device</string>
@@ -1571,6 +1647,8 @@
     <string name="bluetooth_disconnect_pan_nap_profile" product="tablet"><xliff:g id="device_name">%1$s</xliff:g> will be disconnected from sharing this tablet\u2019s Internet connection.</string>
     <!-- Bluetooth settings.  Message for disconnecting from the PAN profile (NAP role). [CHAR LIMIT=80] -->
     <string name="bluetooth_disconnect_pan_nap_profile" product="default"><xliff:g id="device_name">%1$s</xliff:g> will be disconnected from sharing this phone\u2019s Internet connection.</string>
+    <!-- Bluetooth settings.  Message for disconnecting from the PAN profile (NAP role). [CHAR LIMIT=80] -->
+    <string name="bluetooth_disconnect_pan_nap_profile" product="watch"><xliff:g id="device_name">%1$s</xliff:g> will be disconnected from sharing this watch\u2019s Internet connection.</string>
 
     <!-- Bluetooth settings.  Connection options screen.  The title of the screen. [CHAR LIMIT=40] -->
     <string name="bluetooth_device_advanced_title">Paired Bluetooth device</string>
@@ -1664,6 +1742,8 @@
     <string name="nfc_quick_toggle_summary" product="tablet">Allow data exchange when the tablet touches another device</string>
     <!-- Description of NFC in the 1st level settings screen, for a phone. [CHAR LIMIT=NONE] -->
     <string name="nfc_quick_toggle_summary" product="default">Allow data exchange when the phone touches another device</string>
+    <!-- Description of NFC in the 1st level settings screen, for a phone. [CHAR LIMIT=NONE] -->
+    <string name="nfc_quick_toggle_summary" product="watch">Allow data exchange when the watch touches another device</string>
     <!-- Dialog title for NFC disclaimer [CHAR_LIMIT=40]-->
     <string name="nfc_disclaimer_title">Turn on NFC</string>
     <!-- Dialog content for NFC disclaimer: telling user NFC can exchange data when device is nearby other devices (for example: payment terminals, badge reader etc). [CHAR_LIMIT=NONE]-->
@@ -2064,6 +2144,8 @@
     <string name="wifi_hotspot_tethering_on_subtext" product="tablet">Sharing this tablet\u2019s Internet connection via hotspot</string>
     <!-- Summary text when tethering is on -->
     <string name="wifi_hotspot_tethering_on_subtext" product="default">Sharing this phone\u2019s Internet connection via hotspot</string>
+    <!-- Summary text when tethering is on -->
+    <string name="wifi_hotspot_tethering_on_subtext" product="watch">Sharing this watch\u2019s Internet connection via hotspot</string>
     <!-- Summary text when hotspot is on for local-only -->
     <string name="wifi_hotspot_on_local_only_subtext">App is sharing content. To share Internet connection, turn hotspot off, then on</string>
 
@@ -2322,6 +2404,8 @@
     <string name="dock_audio_summary_none" product="tablet">Tablet not docked</string>
     <!-- Dock audio summary for undocked -->
     <string name="dock_audio_summary_none" product="default">Phone not docked</string>
+    <!-- Dock audio summary for undocked -->
+    <string name="dock_audio_summary_none" product="watch">Watch not docked</string>
     <!-- Dock audio summary for docked to unknown -->
     <string name="dock_audio_summary_unknown">Settings for the attached dock</string>
     <!-- Dock not found dialog title -->
@@ -2330,16 +2414,22 @@
     <string name="dock_not_found_text" product="tablet">You need to dock the tablet before setting up dock audio.</string>
     <!-- Dock not found dialog text -->
     <string name="dock_not_found_text" product="default">You need to dock the phone before setting up dock audio.</string>
+    <!-- Dock not found dialog text -->
+    <string name="dock_not_found_text" product="watch">You need to dock the phone before setting up dock audio.</string>
     <!-- Dock settings screen, dock events SFX setting check box label -->
     <string name="dock_sounds_enable_title">Dock insert sound</string>
     <!-- Dock settings screen, setting option summary text when check box is selected -->
     <string name="dock_sounds_enable_summary_on" product="tablet">Play sound when inserting or removing tablet from dock</string>
     <!-- Dock settings screen, setting option summary text when check box is selected -->
     <string name="dock_sounds_enable_summary_on" product="default">Play sound when inserting or removing phone from dock</string>
+    <!-- Dock settings screen, setting option summary text when check box is selected -->
+    <string name="dock_sounds_enable_summary_on" product="watch">Play sound when inserting or removing watch from dock</string>
     <!-- Sound settings screen, setting option summary text when check box is clear -->
     <string name="dock_sounds_enable_summary_off" product="tablet">Don\u2019t play sound when inserting or removing tablet from dock</string>
     <!-- Sound settings screen, setting option summary text when check box is clear -->
     <string name="dock_sounds_enable_summary_off" product="default">Don\u2019t play sound when inserting or removing phone from dock</string>
+    <!-- Sound settings screen, setting option summary text when check box is clear -->
+    <string name="dock_sounds_enable_summary_off" product="watch">Don\u2019t play sound when inserting or removing watch from dock</string>
 
     <!-- Account settings header. [CHAR LIMIT=30] -->
     <string name="account_settings">Accounts</string>
@@ -2380,10 +2470,14 @@
     <string name="accelerometer_summary_on" product="tablet">Switch orientation automatically when rotating tablet</string>
     <!-- Sound & display settings screen, accelerometer-based rotation summary text when check box is selected -->
     <string name="accelerometer_summary_on" product="default">Switch orientation automatically when rotating phone</string>
+    <!-- Sound & display settings screen, accelerometer-based rotation summary text when check box is selected -->
+    <string name="accelerometer_summary_on" product="watch">Switch orientation automatically when rotating watch</string>
     <!-- Sound & display settings screen, accelerometer-based rotation summary text when check box is clear -->
     <string name="accelerometer_summary_off" product="tablet">Switch orientation automatically when rotating tablet</string>
     <!-- Sound & display settings screen, accelerometer-based rotation summary text when check box is clear -->
     <string name="accelerometer_summary_off" product="default">Switch orientation automatically when rotating phone</string>
+    <!-- Sound & display settings screen, accelerometer-based rotation summary text when check box is clear -->
+    <string name="accelerometer_summary_off" product="watch">Switch orientation automatically when rotating watch</string>
     <!-- Sound & display settings screen, setting option name to change brightness level -->
     <string name="brightness">Brightness level</string>
     <!-- Sound & display settings screen, setting option name to change brightness level [CHAR LIMIT=30] -->
@@ -2551,10 +2645,14 @@
     <string name="sim_lock_on" product="tablet">Require PIN to use tablet</string>
     <!-- SIM card lock settings screen, setting option summary text when SIM lock check box is selected  [CHAR LIMIT=40] -->
     <string name="sim_lock_on" product="default">Require PIN to use phone</string>
+    <!-- SIM card lock settings screen, setting option summary text when SIM lock check box is selected  [CHAR LIMIT=40] -->
+    <string name="sim_lock_on" product="watch">Require PIN to use watch</string>
     <!-- SIM card lock settings screen, setting option summary text when SIM lock check box is clear  [CHAR LIMIT=40] -->
     <string name="sim_lock_off" product="tablet">Require PIN to use tablet</string>
     <!-- SIM card lock settings screen, setting option summary text when SIM lock check box is clear  [CHAR LIMIT=40] -->
     <string name="sim_lock_off" product="default">Require PIN to use phone</string>
+    <!-- SIM card lock settings screen, setting option summary text when SIM lock check box is clear  [CHAR LIMIT=40] -->
+    <string name="sim_lock_off" product="watch">Require PIN to use watch</string>
     <!-- SIM card lock settings screen, setting option name to change the SIM PIN  [CHAR LIMIT=40] -->
     <string name="sim_pin_change">Change SIM PIN</string>
     <!-- SIM card lock settings screen, SIM PIN dialog message instruction  [CHAR LIMIT=40] -->
@@ -2613,6 +2711,8 @@
     <string name="device_info_settings" product="tablet">Tablet status</string>
     <!-- Advanced (used for diagnostics) device info activity title [CHAR LIMIT=40] -->
     <string name="device_info_settings" product="default">Phone status</string>
+    <!-- Advanced (used for diagnostics) device info activity title [CHAR LIMIT=40] -->
+    <string name="device_info_settings" product="watch">Watch status</string>
 
     <!-- About phone screen, list item title.  Takes the user to the screen for seeing and installing system updates. [CHAR LIMIT=40] -->
     <string name="system_update_settings_list_item_title">System updates</string>
@@ -2650,6 +2750,8 @@
     <string name="device_status_summary" product="tablet">Status of the battery, network, and other information</string>
     <!-- About phone screen, summary of the item to go into the phone status screen -->
     <string name="device_status_summary" product="default">Phone number, signal, etc.</string>
+    <!-- About phone screen, summary of the item to go into the phone status screen -->
+    <string name="device_status_summary" product="watch">Phone number, signal, etc.</string>
     <!-- Main settings screen item's title to go into the storage settings screen [CHAR LIMIT=25] -->
     <string name="storage_settings" >Storage</string>
     <!-- Main settings screen item's title to go into the storage & USB settings screen [CHAR LIMIT=25] -->
@@ -2670,6 +2772,8 @@
     <string name="status_number" product="tablet">MDN</string>
     <!-- About phone, status item title.  The phone number of the current device [CHAR LIMIT=30] -->
     <string name="status_number" product="default">My phone number</string>
+    <!-- About phone, status item title.  The phone number of the current device [CHAR LIMIT=30] -->
+    <string name="status_number" product="watch">My phone number</string>
     <!-- About phone, status item title.  The phone MIN number of the current device.-->
     <string name="status_min_number">MIN</string>
     <!-- About phone, status item title.  The phone MSID number of the current device.-->
@@ -3163,6 +3267,8 @@
     <string name="master_clear_desc" product="tablet">This will erase all data from your tablet\u2019s <b>internal storage</b>, including:\n\n<li>Your Google account</li>\n<li>System and app data and settings</li>\n<li>Downloaded apps</li></string>
     <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
     <string name="master_clear_desc" product="default">This will erase all data from your phone\u2019s <b>internal storage</b>, including:\n\n<li>Your Google account</li>\n<li>System and app data and settings</li>\n<li>Downloaded apps</li></string>
+    <!-- SD card & phone storage settings screen, message on screen after user selects Factory data reset [CHAR LIMIT=NONE] -->
+    <string name="master_clear_desc" product="watch">This will erase all data from your watch\u2019s <b>internal storage</b>, including:\n\n<li>Your Google account</li>\n<li>System and app data and settings</li>\n<li>Downloaded apps</li></string>
     <!-- SD card & phone storage settings screen, instructions and list of current accounts.  The list of accounts follows this text[CHAR LIMIT=NONE] -->
     <string name="master_clear_accounts" product="default">\n\nYou are currently signed into the following accounts:\n</string>
     <!-- SD card & phone storage settings screen, notification if other users are present on the device [CHAR LIMIT=NONE] -->
@@ -3191,10 +3297,14 @@
     <string name="erase_esim_storage_description" product="default">Erase all eSIMs on the phone. This will not cancel your mobile service plan.</string>
     <!-- SD card & phone storage settings screen, description for check box to erase eSIMs for tablets [CHAR LIMIT=NONE] -->
     <string name="erase_esim_storage_description" product="tablet">Erase all eSIMs on the tablet. This will not cancel your mobile service plan.</string>
+    <!-- SD card & phone storage settings screen, description for check box to erase eSIMs for tablets [CHAR LIMIT=NONE] -->
+    <string name="erase_esim_storage_description" product="watch">Erase all eSIMs on the watch. This will not cancel your mobile service plan.</string>
     <!-- SD card & phone storage settings screen, button on screen after user selects Factory data reset -->
     <string name="master_clear_button_text" product="tablet">Reset tablet</string>
     <!-- SD card & phone storage settings screen, button on screen after user selects Factory data reset -->
     <string name="master_clear_button_text" product="default">Reset phone</string>
+    <!-- SD card & phone storage settings screen, button on screen after user selects Factory data reset -->
+    <string name="master_clear_button_text" product="watch">Reset watch</string>
     <!-- SD card & phone storage settings screen, message on screen after user selects Reset phone button -->
     <string name="master_clear_final_desc">Erase all your personal information and downloaded apps? You can\u2019t undo this action!</string>
     <!-- SD card & phone storage settings screen, button on screen after user selects Reset phone button -->
@@ -3241,6 +3351,7 @@
     <string name="usb_tethering_button_text">USB tethering</string>
     <string name="usb_tethering_subtext" product="default">Share phone\u2019s Internet connection via USB</string>
     <string name="usb_tethering_subtext" product="tablet">Share tablet\u2019s Internet connection via USB</string>
+    <string name="usb_tethering_subtext" product="watch">Share watch\u2019s Internet connection via USB</string>
 
     <!-- Bluetooth Tethering settings-->
     <!-- Label for bluetooth tether checkbox [CHAR LIMIT=25]-->
@@ -3249,6 +3360,8 @@
     <string name="bluetooth_tethering_subtext" product="tablet">Share tablet\u2019s Internet connection via Bluetooth</string>
     <!-- Bluetooth Tethering subtext [CHAR LIMIT=70]-->
     <string name="bluetooth_tethering_subtext" product="default">Share phone\u2019s Internet connection via Bluetooth</string>
+    <!-- Bluetooth Tethering subtext [CHAR LIMIT=70]-->
+    <string name="bluetooth_tethering_subtext" product="watch">Share watch\u2019s Internet connection via Bluetooth</string>
     <!-- Bluetooth tethering off subtext - shown when Bluetooth Tethering is turned off [CHAR LIMIT=80]-->
     <string name="bluetooth_tethering_off_subtext_config">Sharing this <xliff:g id="device_name">%1$d</xliff:g>\u2019s Internet connection via Bluetooth</string>
     <!-- Bluetooth Tethering settings. Error message shown when trying to connect an 8th device [CHAR LIMIT=50]-->
@@ -3358,6 +3471,8 @@
     <string name="location_street_level" product="tablet">Let apps use GPS on your tablet to pinpoint your location</string>
     <!-- [CHAR LIMIT=100] Security & location settings screen, setting check box summary for GPS satellites on a phone -->
     <string name="location_street_level" product="default">Let apps use GPS on your phone to pinpoint your location</string>
+    <!-- [CHAR LIMIT=100] Security & location settings screen, setting check box summary for GPS satellites on a phone -->
+    <string name="location_street_level" product="watch">Let apps use GPS on your watch to pinpoint your location</string>
     <!-- Security & location settings screen, setting check box label if Assisted GPS should be enabled -->
     <string name="assisted_gps">Use assisted GPS</string>
     <!-- Security & location settings screen, setting summary when Assisted GPS check box is selected -->
@@ -3380,6 +3495,8 @@
     <string name="about_settings" product="tablet">About tablet</string>
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
     <string name="about_settings" product="default">About phone</string>
+    <!-- Main settings screen, setting title for the user to go into the About phone screen -->
+    <string name="about_settings" product="watch">About watch</string>
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
     <string name="about_settings" product="emulator">About emulated device</string>
     <!-- Main settings screen, setting summary for the user to go into the About phone screen-->
@@ -3657,6 +3774,15 @@
         result from their use.
     </string>
 
+    <!-- Warning that appears below the unknown sources switch in settings -->
+    <string name="install_all_warning" product="watch">
+        Your watch and personal data are more vulnerable
+        to attack by unknown apps. By installing apps from
+        this source, you agree that you are responsible for
+        any damage to your watch or loss of data that may
+        result from their use.
+    </string>
+
     <!-- Applications settings screen, setting check box title. If checked, applications show more settings options. -->
     <string name="advanced_settings">Advanced settings</string>
     <!-- Applications settings screen, setting check box summary.  This is the summary for "Advanced settings" checkbox  -->
@@ -3819,6 +3945,8 @@
     <string name="security_settings_desc" product="tablet">This app can access the following on your tablet:</string>
     <!-- Manage applications, individual application info screen, text that appears under the "Permissions" heading. This describes the permissions that the application has. -->
     <string name="security_settings_desc" product="default">This app can access the following on your phone:</string>
+    <!-- Manage applications, individual application info screen, text that appears under the "Permissions" heading. This describes the permissions that the application has. -->
+    <string name="security_settings_desc" product="watch">This app can access the following on your watch:</string>
     <!-- [CHAR_LIMIT=NONE] Manage applications, individual application info screen, text that appears under the "Permissions" heading.
          This describes the permissions that the application has.  It is used when multiple packages are contributing
          to the permissions and need to be listed here. -->
@@ -3830,6 +3958,13 @@
          This describes the permissions that the application has.  It is used when multiple packages are contributing
          to the permissions and need to be listed here. -->
     <string name="security_settings_desc_multi" product="default">This app can access the following on your phone.
+         In order to improve performance and reduce memory usage, some of these permissions
+         are available to <xliff:g id="base_app_name">%1$s</xliff:g>
+         because it runs in the same process as <xliff:g id="additional_apps_list">%2$s</xliff:g>:</string>
+    <!-- [CHAR_LIMIT=NONE] Manage applications, individual application info screen, text that appears under the "Permissions" heading.
+         This describes the permissions that the application has.  It is used when multiple packages are contributing
+         to the permissions and need to be listed here. -->
+    <string name="security_settings_desc_multi" product="watch">This app can access the following on your watch.
          In order to improve performance and reduce memory usage, some of these permissions
          are available to <xliff:g id="base_app_name">%1$s</xliff:g>
          because it runs in the same process as <xliff:g id="additional_apps_list">%2$s</xliff:g>:</string>
@@ -3859,6 +3994,8 @@
     <string name="move_app_to_internal" product="tablet">Move to tablet</string>
     <!-- Manage applications, text for Move button to move app to internal storage -->
     <string name="move_app_to_internal" product="default">Move to phone</string>
+    <!-- Manage applications, text for Move button to move app to internal storage -->
+    <string name="move_app_to_internal" product="watch">Move to watch</string>
     <!-- Manage applications, text for Move button  to move app to sdcard [CHAR LIMIT=25] -->
     <string name="move_app_to_sdcard" product="nosdcard">Move to USB storage</string>
     <!-- Manage applications, text for Move button  to move app to sdcard -->
@@ -4035,6 +4172,10 @@
     <string name="runningservicedetails_stop_dlg_text" product="default">If you stop this service, some
         features of your phone may stop working correctly until you power it off
         and then on again.</string>
+    <!-- Running service details, stop confirmation descriptive text. Displays when user selects selects to stop a system service. -->
+    <string name="runningservicedetails_stop_dlg_text" product="watch">If you stop this service, some
+        features of your watch may stop working correctly until you power it off
+        and then on again.</string>
 
     <!-- Languages Settings --> <skip />
     <!-- Title of Language, input & gestures setting on main settings screen. -->
@@ -4185,6 +4326,8 @@
     <string name="testing_phone_info" product="tablet">Tablet information</string>
     <!-- In the Testing screen.  The item title of the activity that shows a bunch of phone-related information.  -->
     <string name="testing_phone_info" product="default">Phone information</string>
+    <!-- In the Testing screen.  The item title of the activity that shows a bunch of phone-related information.  -->
+    <string name="testing_phone_info" product="watch">Watch information</string>
     <!-- Do not translate. In the Testing screen. The item title of the activity that shows a bunch of SIM-related operations.  -->
     <string name="testing_sim_toolkit">SIM toolkit</string>
 
@@ -4716,6 +4859,8 @@
     <string name="dialog_stop_message" product="tablet">Your tablet can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> is keeping your tablet awake.\n\nTo try to fix this issue, you can stop the app.\n\nIf this keeps happening, you may need to uninstall the app to improve battery performance.</string>
     <!-- Message body for force stop dialog [CHAR LIMIT=NONE] -->
     <string name="dialog_stop_message" product="device">Your device can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> is keeping your device awake.\n\nTo try to fix this issue, you can stop the app.\n\nIf this keeps happening, you may need to uninstall the app to improve battery performance.</string>
+    <!-- Message body for force stop dialog [CHAR LIMIT=NONE] -->
+    <string name="dialog_stop_message" product="watch">Your watch can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> is keeping your watch awake.\n\nTo try to fix this issue, you can stop the app.\n\nIf this keeps happening, you may need to uninstall the app to improve battery performance.</string>
 
     <!-- Message body for force stop dialog [CHAR LIMIT=NONE] -->
     <string name="dialog_stop_message_wakeup_alarm" product="default">Your phone can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> keeps waking up your phone.\n\nTo try to fix this issue, you can stop <xliff:g id="app">%1$s</xliff:g>.\n\nIf this keeps happening, you may need to uninstall the app to improve battery performance.</string>
@@ -4723,6 +4868,8 @@
     <string name="dialog_stop_message_wakeup_alarm" product="tablet">Your tablet can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> keeps waking up your tablet.\n\nTo try to fix this issue, you can stop <xliff:g id="app">%1$s</xliff:g>.\n\nIf this keeps happening, you may need to uninstall the app to improve battery performance.</string>
     <!-- Message body for force stop dialog [CHAR LIMIT=NONE] -->
     <string name="dialog_stop_message_wakeup_alarm" product="device">Your device can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> keeps waking up your device.\n\nTo try to fix this issue, you can stop <xliff:g id="app">%1$s</xliff:g>.\n\nIf this keeps happening, you may need to uninstall the app to improve battery performance.</string>
+    <!-- Message body for force stop dialog [CHAR LIMIT=NONE] -->
+    <string name="dialog_stop_message_wakeup_alarm" product="watch">Your watch can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> keeps waking up your watch.\n\nTo try to fix this issue, you can stop <xliff:g id="app">%1$s</xliff:g>.\n\nIf this keeps happening, you may need to uninstall the app to improve battery performance.</string>
 
     <!-- Text for OK button in force stop dialog [CHAR LIMIT=30] -->
     <string name="dialog_stop_ok">Stop app</string>
@@ -4735,6 +4882,8 @@
     <string name="dialog_background_check_message" product="tablet">Your tablet can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> keeps waking up your tablet.\n\nTo try to fix this issue, you can stop <xliff:g id="app">%1$s</xliff:g> and prevent it from running in the background.</string>
     <!-- Message body for background usage dialog [CHAR LIMIT=NONE] -->
     <string name="dialog_background_check_message" product="device">Your device can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> keeps waking up your device.\n\nTo try to fix this issue, you can stop <xliff:g id="app">%1$s</xliff:g> and prevent it from running in the background.</string>
+    <!-- Message body for background usage dialog [CHAR LIMIT=NONE] -->
+    <string name="dialog_background_check_message" product="watch">Your watch can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> keeps waking up your watch.\n\nTo try to fix this issue, you can stop <xliff:g id="app">%1$s</xliff:g> and prevent it from running in the background.</string>
     <!-- Text for OK button in background usage dialog [CHAR LIMIT=30] -->
     <string name="dialog_background_check_ok">Turn off</string>
 
@@ -4746,6 +4895,8 @@
     <string name="dialog_location_message" product="tablet">Your tablet can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> keeps requesting your location when you\'re not using the app.\n\nTo fix this issue, you can turn off location for this app.</string>
     <!-- Message body for location dialog [CHAR LIMIT=NONE] -->
     <string name="dialog_location_message" product="device">Your device can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> keeps requesting your location when you\'re not using the app.\n\nTo fix this issue, you can turn off location for this app.</string>
+    <!-- Message body for location dialog [CHAR LIMIT=NONE] -->
+    <string name="dialog_location_message" product="watch">Your watcg can\'t manage battery normally because <xliff:g id="app">%1$s</xliff:g> keeps requesting your location when you\'re not using the app.\n\nTo fix this issue, you can turn off location for this app.</string>
 
     <!-- Text for OK button in location dialog [CHAR LIMIT=30] -->
     <string name="dialog_location_ok">Turn off</string>
@@ -4768,6 +4919,8 @@
     <string name="power_idle" product="tablet">Tablet idle</string>
     <!-- Label for power consumed when Idle -->
     <string name="power_idle" product="default">Phone idle</string>
+    <!-- Label for power consumed when Idle -->
+    <string name="power_idle" product="watch">Watch idle</string>
     <!-- Label for power that we aren't able to account for -->
     <string name="power_unaccounted">Miscellaneous</string>
     <!-- Label for power that we computed too much for -->
@@ -4795,6 +4948,8 @@
     <string name="usage_type_phone" product="tablet">Tablet</string>
     <!-- Label for Phone usage time -->
     <string name="usage_type_phone" product="default">Phone</string>
+    <!-- Label for Phone usage time -->
+    <string name="usage_type_phone" product="watch">Watch</string>
     <!-- Label for mobile network data sent [CHAR LIMIT=32] -->
     <string name="usage_type_data_send">Mobile packets sent</string>
     <!-- Label for mobile network data received [CHAR LIMIT=32] -->
@@ -4844,6 +4999,8 @@
     <string name="battery_desc_standby" product="tablet">Battery used when tablet is idle</string>
     <!-- Description for standby detail -->
     <string name="battery_desc_standby" product="default">Battery used when phone is idle</string>
+    <!-- Description for standby detail -->
+    <string name="battery_desc_standby" product="watch">Battery used when watch is idle</string>
 
     <!-- Description for cell radio detail -->
     <string name="battery_desc_radio">Battery used by cell radio</string>
@@ -5522,6 +5679,8 @@
     <string name="really_remove_account_message" product="tablet">Removing this account will delete all of its messages, contacts, and other data from the tablet!</string>
     <!-- Remove account message in dialog [CHAR LIMIT=NONE] -->
     <string name="really_remove_account_message" product="default">Removing this account will delete all of its messages, contacts, and other data from the phone!</string>
+    <!-- Remove account message in dialog [CHAR LIMIT=NONE] -->
+    <string name="really_remove_account_message" product="watch">Removing this account will delete all of its messages, contacts, and other data from the watch!</string>
     <!-- This is shown if the autheticator for a given account fails to remove it. [CHAR LIMIT=NONE] -->
     <string name="remove_account_failed">This change isn\'t allowed by your admin</string>
     <!-- What to show in messaging that refers to this provider, e.g. AccountSyncSettings -->
@@ -5694,6 +5853,8 @@
     <string name="data_usage_auto_sync_on_dialog" product="tablet">Any changes you make to your accounts on the web will be automatically copied to your tablet.\n\nSome accounts may also automatically copy any changes you make on the tablet to the web. A Google Account works this way.</string>
     <!--  Body of dialog shown when user enables global auto sync [CHAR LIMIT=none] -->
     <string name="data_usage_auto_sync_on_dialog" product="default">Any changes you make to your accounts on the web will be automatically copied to your phone.\n\nSome accounts may also automatically copy any changes you make on the phone to the web. A Google Account works this way.</string>
+    <!--  Body of dialog shown when user enables global auto sync [CHAR LIMIT=none] -->
+    <string name="data_usage_auto_sync_on_dialog" product="watch">Any changes you make to your accounts on the web will be automatically copied to your watch.\n\nSome accounts may also automatically copy any changes you make on the watch to the web. A Google Account works this way.</string>
     <!--  Title of dialog shown when user disables global auto sync [CHAR LIMIT=32] -->
     <string name="data_usage_auto_sync_off_dialog_title">Turn auto-sync data off?</string>
     <!--  Body of dialog shown when user disables global auto sync [CHAR LIMIT=none] -->
@@ -5717,6 +5878,8 @@
     <string name="data_usage_limit_dialog_mobile" product="tablet">Your tablet will turn off mobile data once it reaches the limit you set.\n\nSince data usage is measured by your tablet, and your carrier may account for usage differently, consider setting a conservative limit.</string>
     <!-- Body of dialog shown before user limits mobile data usage. [CHAR LIMIT=NONE] -->
     <string name="data_usage_limit_dialog_mobile" product="default">Your phone will turn off mobile data once it reaches the limit you set.\n\nSince data usage is measured by your phone, and your carrier may account for usage differently, consider setting a conservative limit.</string>
+    <!-- Body of dialog shown before user limits mobile data usage. [CHAR LIMIT=NONE] -->
+    <string name="data_usage_limit_dialog_mobile" product="watch">Your watch will turn off mobile data once it reaches the limit you set.\n\nSince data usage is measured by your watch, and your carrier may account for usage differently, consider setting a conservative limit.</string>
 
     <!-- Title of dialog shown before user restricts background data usage. [CHAR LIMIT=48] -->
     <string name="data_usage_restrict_background_title">Restrict background data?</string>
@@ -5726,6 +5889,8 @@
     <string name="data_usage_restrict_background_multiuser" product="tablet">If you restrict background mobile data, some apps and services won\u2019t work unless you\u2019re connected to Wi\u2011Fi.\n\nThis setting affects all users on this tablet.</string>
     <!-- Body of dialog shown before user restricts background data usage. This is for multiuser phones. [CHAR LIMIT=NONE] -->
     <string name="data_usage_restrict_background_multiuser" product="default">If you restrict background mobile data, some apps and services won\u2019t work unless you\u2019re connected to Wi\u2011Fi.\n\nThis setting affects all users on this phone.</string>
+    <!-- Body of dialog shown before user restricts background data usage. This is for multiuser phones. [CHAR LIMIT=NONE] -->
+    <string name="data_usage_restrict_background_multiuser" product="watch">If you restrict background mobile data, some apps and services won\u2019t work unless you\u2019re connected to Wi\u2011Fi.\n\nThis setting affects all users on this watch.</string>
 
     <!-- Label displaying current network data usage warning threshold. [CHAR LIMIT=18] -->
     <string name="data_usage_sweep_warning"><font size="18"><xliff:g id="number" example="128">^1</xliff:g></font> <font size="9"><xliff:g id="unit" example="KB">^2</xliff:g></font>\n<font size="12">warning</font></string>
@@ -5747,6 +5912,8 @@
     <string name="data_usage_total_during_range_mobile" product="tablet"><xliff:g id="range" example="Jul 1 - Jul 31">%2$s</xliff:g>: about <xliff:g id="total" example="128KB">%1$s</xliff:g> used, as measured by your tablet. Your carrier\u2019s data usage accounting may differ.</string>
     <!-- Label displaying total network data transferred during a specific time period, including a disclaimer that contrasts device versus carrier reporting. [CHAR LIMIT=80] -->
     <string name="data_usage_total_during_range_mobile" product="default"><xliff:g id="range" example="Jul 1 - Jul 31">%2$s</xliff:g>: about <xliff:g id="total" example="128KB">%1$s</xliff:g> used, as measured by your phone. Your carrier\u2019s data usage accounting may differ.</string>
+    <!-- Label displaying total network data transferred during a specific time period, including a disclaimer that contrasts device versus carrier reporting. [CHAR LIMIT=80] -->
+    <string name="data_usage_total_during_range_mobile" product="watch"><xliff:g id="range" example="Jul 1 - Jul 31">%2$s</xliff:g>: about <xliff:g id="total" example="128KB">%1$s</xliff:g> used, as measured by your watch. Your carrier\u2019s data usage accounting may differ.</string>
 
     <!-- Dialog title for selecting metered networks. [CHAR LIMIT=25] -->
     <string name="data_usage_metered_title">Network restrictions</string>
@@ -6070,6 +6237,8 @@
     <string name="user_cannot_manage_message" product="tablet">Only the tablet\u2019s owner can manage users.</string>
     <!-- Message to secondary users that only owner can manage users [CHAR LIMIT=none] -->
     <string name="user_cannot_manage_message" product="default">Only the phone\u2019s owner can manage users.</string>
+    <!-- Message to secondary users that only owner can manage users [CHAR LIMIT=none] -->
+    <string name="user_cannot_manage_message" product="watch">Only the watch\u2019s owner can manage users.</string>
     <!-- Message to limited users that they cannot add accounts [CHAR LIMIT=100] -->
     <string name="user_cannot_add_accounts_message">Restricted profiles cannot add accounts</string>
 
@@ -6095,6 +6264,8 @@
     <string name="user_confirm_remove_self_message" product="tablet">You will lose your space and data on this tablet. You can\u2019t undo this action.</string>
     <!-- User (self) removal confirmation message [CHAR LIMIT=none] -->
     <string name="user_confirm_remove_self_message" product="default">You will lose your space and data on this phone. You can\u2019t undo this action.</string>
+    <!-- User (self) removal confirmation message [CHAR LIMIT=none] -->
+    <string name="user_confirm_remove_self_message" product="watch">You will lose your space and data on this watch. You can\u2019t undo this action.</string>
     <!-- User removal confirmation message [CHAR LIMIT=none] -->
     <string name="user_confirm_remove_message">All apps and data will be deleted.</string>
     <!-- Work profile removal confirmation message [CHAR LIMIT=none] -->
@@ -6149,6 +6320,8 @@
     <string name="global_change_warning" product="tablet">This setting affects all users on this tablet.</string>
     <!-- Warning message when changing a global setting for a phone.[CHAR LIMIT=none] -->
     <string name="global_change_warning" product="default">This setting affects all users on this phone.</string>
+    <!-- Warning message when changing a global setting for a phone.[CHAR LIMIT=none] -->
+    <string name="global_change_warning" product="watch">This setting affects all users on this watch.</string>
     <!-- Warning message title for global locale change [CHAR LIMIT=40] -->
     <string name="global_locale_change_title">Change language</string>
 
@@ -6380,6 +6553,8 @@
     <string name="restriction_nfc_enable_summary" product="tablet">Allow data exchange when the tablet touches another device</string>
     <!-- Restrictions summary for allowing NFC transfers (phone) [CHAR LIMIT=100] -->
     <string name="restriction_nfc_enable_summary" product="default">Allow data exchange when the phone touches another device</string>
+    <!-- Restrictions summary for allowing NFC transfers (phone) [CHAR LIMIT=100] -->
+    <string name="restriction_nfc_enable_summary" product="watch">Allow data exchange when the watch touches another device</string>
     <!-- Restrictions title for allowing location sharing [CHAR LIMIT=35] -->
     <string name="restriction_location_enable_title">Location</string>
     <!-- Restrictions summary for allowing location sharing [CHAR LIMIT=100] -->
@@ -8686,6 +8861,8 @@
     <string name="gesture_preference_summary" product="tablet">Quick gestures to control your tablet</string>
     <!-- Preference summary for gesture settings (device) [CHAR LIMIT=NONE]-->
     <string name="gesture_preference_summary" product="device">Quick gestures to control your device</string>
+    <!-- Preference summary for gesture settings (device) [CHAR LIMIT=NONE]-->
+    <string name="gesture_preference_summary" product="watch">Quick gestures to control your watch</string>
 
     <!-- Title text for double tap power for camera [CHAR LIMIT=60]-->
     <string name="double_tap_power_for_camera_title">Jump to camera</string>
@@ -8714,6 +8891,8 @@
     <string name="double_twist_for_camera_suggestion_summary" product="tablet">Double-twist tablet for selfie mode</string>
     <!-- Summary for settings suggestion for double twist for camera (device) [CHAR LIMIT=60] -->
     <string name="double_twist_for_camera_suggestion_summary" product="device">Double-twist device for selfie mode</string>
+    <!-- Summary for settings suggestion for double twist for camera (device) [CHAR LIMIT=60] -->
+    <string name="double_twist_for_camera_suggestion_summary" product="watch">Double-twist watch for selfie mode</string>
 
     <!-- Preference and settings suggestion title text for ambient display double tap (phone) [CHAR LIMIT=60]-->
     <string name="ambient_display_title" product="default">Double-tap to check phone</string>
@@ -8721,6 +8900,8 @@
     <string name="ambient_display_title" product="tablet">Double-tap to check tablet</string>
     <!-- Preference and settings suggestion title text for ambient display double tap (device) [CHAR LIMIT=60]-->
     <string name="ambient_display_title" product="device">Double-tap to check device</string>
+    <!-- Preference and settings suggestion title text for ambient display double tap (device) [CHAR LIMIT=60]-->
+    <string name="ambient_display_title" product="watch">Double-tap to check watch</string>
 
     <!-- Summary text for ambient display double tap [CHAR LIMIT=NONE]-->
     <string name="ambient_display_summary">To check time, notification icons, and other info, double-tap your screen.</string>
@@ -8734,6 +8915,8 @@
     <string name="ambient_display_pickup_title" product="tablet">Lift to check tablet</string>
     <!-- Preference and settings suggestion title text for ambient display pick up (device) [CHAR LIMIT=60]-->
     <string name="ambient_display_pickup_title" product="device">Lift to check device</string>
+    <!-- Preference and settings suggestion title text for ambient display pick up (device) [CHAR LIMIT=60]-->
+    <string name="ambient_display_pickup_title" product="watch">Lift to check watch</string>
 
     <!-- Summary text for ambient display (phone) [CHAR LIMIT=NONE]-->
     <string name="ambient_display_pickup_summary" product="default">To check time, notification icons, and other info, pick up your phone.</string>
@@ -8741,6 +8924,8 @@
     <string name="ambient_display_pickup_summary" product="tablet">To check time, notification icons, and other info, pick up your tablet.</string>
     <!-- Summary text for ambient display (device) [CHAR LIMIT=NONE]-->
     <string name="ambient_display_pickup_summary" product="device">To check time, notification icons, and other info, pick up your device.</string>
+    <!-- Summary text for ambient display (device) [CHAR LIMIT=NONE]-->
+    <string name="ambient_display_pickup_summary" product="watch">To check time, notification icons, and other info, pick up your watch.</string>
 
     <!-- Summary for settings suggestion for ambient display pick up [CHAR LIMIT=60] -->
     <string name="ambient_display_pickup_suggestion_summary">Check notifications when screen is off</string>
@@ -8754,6 +8939,8 @@
     <string name="fingerprint_swipe_for_notifications_summary" product="tablet">To check your notifications, swipe down on the fingerprint sensor on the back of your tablet.</string>
     <!-- Summary text for fingerprint swipe for notifications (device) [CHAR LIMIT=160]-->
     <string name="fingerprint_swipe_for_notifications_summary" product="device">To check your notifications, swipe down on the fingerprint sensor on the back of your device.</string>
+    <!-- Summary text for fingerprint swipe for notifications (device) [CHAR LIMIT=160]-->
+    <string name="fingerprint_swipe_for_notifications_summary" product="watch">To check your notifications, swipe down on the fingerprint sensor on the back of your watch.</string>
 
     <!-- Title for settings suggestion for fingerprint swipe for notifications [CHAR LIMIT=60] -->
     <string name="fingerprint_swipe_for_notifications_suggestion_title">See notifications quickly</string>
@@ -9048,6 +9235,9 @@
 
     <!-- Summary label for new device suggestion, which is displayed in Settings homepage [CHAR LIMIT=100] -->
     <string name="new_device_suggestion_summary" product="device">Take a tour of your new device</string>
+
+    <!-- Summary label for new device suggestion, which is displayed in Settings homepage [CHAR LIMIT=100] -->
+    <string name="new_device_suggestion_summary" product="watch">Take a tour of your new watch</string>
 
     <!-- The divider symbol between different parts of the notification header including spaces. not translatable [CHAR LIMIT=3] -->
     <string name="notification_header_divider_symbol_with_spaces" translatable="false">" • "</string>

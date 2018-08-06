@@ -165,6 +165,8 @@
         <item name="*android:preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
         <item name="*android:preferenceFragmentPaddingSide">@dimen/settings_side_margin</item>
 
+        <item name="android:windowSwipeToDismiss">true</item>
+
         <item name="fingerprint_layout_theme">@style/FingerprintLayoutTheme</item>
         <item name="ic_menu_moreoverflow">@*android:drawable/ic_menu_moreoverflow_holo_dark</item>
         <item name="ic_wps">@drawable/ic_wps_light</item>

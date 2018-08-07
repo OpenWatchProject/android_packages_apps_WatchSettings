@@ -50,6 +50,10 @@
   <!-- Color Picker -->
   <string name="dialog_color_picker">Farbauswahl</string>
   <string name="press_color_to_apply">Klicken Sie auf eine Farbe zum auswählen</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="hex_hint">#ff000000</string>
   <string name="set">Übernehmen</string>
   <string name="color_default">Standard</string>
   <!-- Vibrate on plug -->
@@ -85,6 +89,7 @@
   <string name="custom_light_on_time_title">"Länge des Aufleuchtens der LED pro Intervall (ms)"</string>
   <string name="custom_light_off_time_title">"Länge des nicht Aufleuchtens der LED pro Intervall (ms)"</string>
   <string name="app_notifications_info_desc">Tippen Sie zum Konfigurieren und zur Farbgebung auf einen der oben dargestellten Kanäle</string>
+  <string name="value_equals_default">Def</string>
   <string name="show_light_on_zen_title">Aufleuchten im \"nicht stören\"-Modus</string>
   <string name="link_volume_option_title">Klingel- und Benachrichtigungslautstärken verbinden</string>
   <!-- Font picker -->

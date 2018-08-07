@@ -94,6 +94,6 @@
   <string name="link_volume_option_title">着信音と通知音をリンクさせる</string>
   <!-- Font picker -->
   <string name="font_picker_title">フォント</string>
-  <string name="font_subs_info">これを使用する前にSubstratumの全てのフォントオーバーレイを無効にしてください。\nSubstratumの使用に戻る場合は、ここでデフォルトフォント（Roboto）を選択してください。</string>
+  <string name="font_subs_info">これを使用する前にSubstratumの全てのフォントオーバーレイを無効にしてください。\nSubstratumの使用に戻る場合は、ここで既定のフォント（Roboto）を選択してください。</string>
   <string name="font_picker_reboot_recommended">最適な体験のために\n端末を再起動してください</string>
 </resources>

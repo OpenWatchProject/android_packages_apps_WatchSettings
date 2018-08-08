@@ -22,7 +22,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v7-appcompat \
     android-support-v14-preference \
     jsr305 \
-    watchsettings-logtags \
+    WatchSettingslogtags \
     org.cyanogenmod.platform.internal
 
 LOCAL_MODULE_TAGS := optional
